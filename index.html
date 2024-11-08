@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Descubre destinos únicos y crea momentos inolvidables con la agencia de viajes SurzArias . Personalizamos tus aventuras para que explores el mundo a tu manera. ¡Tu próxima aventura comienza en SurzArias!" />
+        <meta name="author" content="Mauro Surza" />
+        <meta name="author" content="Selena Arias" />
+        <meta name="author" content="Franco Marchioli" />
+        <meta name="author" content="Ailen Metetiero" />
+        <title>Mandale Viaje</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/png" href="assets/logo.png"/>
+                <!-- Bootstrap icons-->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+                <!-- Google fonts-->
+                <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+                <!-- Core theme CSS (includes Bootstrap)-->
+                <link href="css/styles.css" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+                <style>
+                    body  
+                    {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0; /* Elimina margen del body */
+            padding: 0; /* Elimina padding del body */
+        }
+        .image-container {
+            display: flex; /* Usa flexbox para alinear imágenes */
+            justify-content: space-between; /* Distribuye el espacio entre imágenes */
+            width: 100%; /* Ocupa todo el ancho */
+            margin: 0; /* Elimina margen */
+            padding: 0; /* Elimina padding */
+        }
+        .image-container img {
+            width: 30%; /* Cada imagen ocupa el 20% del ancho */
+            height: auto; /* Mantiene la relación de aspecto */
+            display: block; /* Elimina espacio adicional debajo de imágenes */
+        }  
+                    
+                        { font-family:'Source Sans Pro', sans-serif;
+                        /* Cambia la fuente del cuerpo si es necesario */
+                        font-weight: 700; /* Agrega negrita */
+                    }
+                    .navbar-brand {
+                        font-family: Georgia, 'Times New Roman', Times, serif; /* Cambia la fuente de SURZARIAS */
+                        font-size: 70px; /* Ajusta el tamaño de la fuente según tus necesidades */
+                        font-weight: bold; /* Agrega negrita */
+                        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+                        transition: color 0.3s, text-shadow 0.3s; /* Efecto de transición */
+                    }
+                    .btn-primary {
+                        font-family:'Source Sans Pro', sans-serif; /* Cambia la fuente del botón REGISTRARSE */
+                        font-size: 16px; /* Ajusta el tamaño de la fuente según tus necesidades */
+                        font-weight: 700; /* Agrega negrita */
+                        background-color: #4eb6d6; /* Este es un tono beige */
+                    }
+                    .showcase-img {
+    height: 400px; /* Ajusta la altura */
+    background-size: cover; /* Ajuste de la imagen */
+    background-position: center; /* Centrado de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+@media (max-width: 768px) {
+    .showcase-img {
+        height: 250px; /* Altura en pantallas más pequeñas */
+    }
+}
+.offers {
+    color:#4eb6d6;;
+}
+.offers h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.offers-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.offers-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.offers-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 100%;
+    transition: transform 0.3s;
+}
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slide-up 0.6s forwards;
+}
+@keyframes slide-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.image-container {
+    width: 45%; /* Ajusta el ancho según sea necesario */
+    position: relative; /* Permite el uso de posicionamiento absoluto en el interior */
+}
+
+.images-wrapper {
+    display: flex; /* Flexbox para alinear las imágenes horizontalmente */
+    animation: slide 15s linear infinite; /* Controla la duración y la animación */
+}
+
+.image-container img {
+    width: 45%; /* Ajusta el ancho de las imágenes */
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    transition: transform 0.5s ease; /* Suaviza la transición del efecto */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+
+}
+.testimonial-item img {
+    width: 150px;  /* Cambia este valor según tus necesidades */
+    height: 200px; /* Cambia este valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen mantenga la proporción y se recorte adecuadamente */
+}
+.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../assets/img/amigos\ 2.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.masthead .container {
+  z-index: 1; /* Asegura que el contenido esté encima de otros elementos */
+}
+
+.text-center h1, .text-center h2, .text-center h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega sombra para mejorar la legibilidad */
+}
+
+.display-4 {
+  font-size: 3rem;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+         </style>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <img src="assets/Logo.png" alt="Logo de la imagen" width="100" height="100"> 
+                <a class="navbar-brand" style="color: #4eb6d6; href="#!" >MANDALE VIAJE</a>
+                <a class="btn btn-primary" ; href="#signup">REGISTRARSE</a>          
+            </div>
+        </nav>
+        <div class="image-container">
+            <img src="assets/imagen 1.png" alt="Imagen 1">
+            <img src="assets/imagen 2.png" alt="Imagen 2">
+            <img src="assets/Imagen 3.png" alt="Imagen 3">
+            <img src="assets/imagen 4.png" alt="Imagen 4">
+            <img src="assets/imagen 5.png" alt="Imagen 5">
+        </div>    
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container position-relative">
+              <div class="row justify-content-center">
+                <div class="col-xl-6">
+                  <div class="text-center text-white">
+                    <h1 class="display-4 mb-4">CANCÚN - ENERO 2025</h1>
+                    <h2 class="display-5 mb-4">PACK AMIGOS</h2>
+                    <h3 class="lead mb-5">"COPAMOS CANCÚN"</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>          
+        <!-- Icons Grid-->
+        <section class="offers bg-light text-center">
+            <div class="container">
+                <h1 class="mb-5" >¡Ofertas CYBER MONDAY!</h1>
+                <h1 class="mb-5" >Cupos Limitados</h1>
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="offers-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                              <img src="assets/izquierda.jpg" alt="Imagen 1" class="img-fluid"> 
+                            </div>
+                          </div>
+                      
+                          <div class="col-lg-4">
+                            <div class="offers-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                              <img src="assets/precio.jpg" alt="Imagen 2" class="img-fluid"> 
+                            </div>
+                          </div>
+                      
+                          <div class="col-lg-4">
+                            <div class="offers-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                              <img src="assets/derecha.jpg" alt="Imagen 3" class="img-fluid"> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>                                                       
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- Image Showcases-->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/familia.png')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h1> Paquete Familiar</h1> 
+                        <h3>Miami</h3><br>
+                        <ul class="lead mb-0">      <ul>
+                            <li>8 DÍAS / 7 NOCHES</li> <li>Hotel + Vuelo</li> <li>2500 USD por Persona</li>
+                             </ul>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url(assets/img/mendoza.jpg)"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h1>USHUAIA</h1>
+                        <ul class="lead mb-0">      <ul>
+                            <li>6 DÍAS / 5 NOCHES</li> <li>Hotel </li> <li>Visitas Guiadas</li> <li>Combi</li> <li> 940.000 ARS por Persona</li>
+                             </ul>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/Fondo\ disney.png')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h1>Disney + Miami</h1> <br>
+                        <ul class="lead mb-0">      <ul>
+                            <li> 12 NOCHES</li> <li>Admisiones a los parques</li> <li>Traslados en destino</li><li>4.775 USD por Persona</li>
+                             </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials-->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h1 class="mb-5">Conoce a nuestro Equipo</h1>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/Francom.jpeg" alt="Franco Marchioli" />
+                            <h5>Franco Marchioli</h5>
+                    </div>
+                </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/selena.png" alt="..." />
+                            <h5>Selena Arias</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/mauro.jpeg" alt="..." />
+                            <h5>Mauro Surza</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="assets/img/Ailu.jpeg" alt="..." />
+                            <h5>Ailen Metetiero</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action-->
+        <section class="call-to-action text-white text-center" id="signup">
+            <div class="container position-relative">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6">
+                        <h2 class="mb-6">Elegí el destino y nosotros nos ocupamos del resto!</h2>
+                        <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                            <!-- Email address input-->
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Correo Electrónico" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item"><a href="#!">Acerca de</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Contacto</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Términos de uso</a></li>
+                            <li class="list-inline-item">⋅</li>
+                            <li class="list-inline-item"><a href="#!">Politica de privacidad</a></li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; © Tu sitio web 2024. 
+                             Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.facebook.com"><i class="bi-facebook fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
+                                <a href="https://www.twitter.com"><i class="bi-twitter fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com"><i class="bi-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
